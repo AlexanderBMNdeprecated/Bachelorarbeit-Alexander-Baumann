@@ -1,0 +1,23 @@
+ #menuContent > ion-list{
+    margin: 0px;
+
+  }
+  #menuContent > ion-list ion-icon {
+    color: #808080;
+    margin-right: 20px;
+  }
+  #menuContent > ion-list ion-item {
+    color: #808080;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-family: lato;
+  }
+  #menuContent > ion-list  .active {
+    border-left: 5px solid;
+    border-color: #628cff;
+    color: #628cff;
+    padding-left: 5px;
+    ion-icon {
+      color: #628cff;
+    }
+  }

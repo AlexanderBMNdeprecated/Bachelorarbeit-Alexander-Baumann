@@ -1,0 +1,147 @@
+@mixin blockStyle ($blockSize) {
+  width: $blockSize;
+  height: $blockSize;
+  display: inline-block;
+  background-size: 100%, 100%;
+}
+@mixin blocks ($blockSize) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    @include blockStyle($blockSize);
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    @include blockStyle($blockSize);
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    @include blockStyle($blockSize);
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(#{$blockSize} - 2px) ;
+    height: calc(#{$blockSize} - 2px);
+    left: calc(#{$blockSize} + 1px);
+    top: calc(#{$blockSize} + 1px);
+    transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(#{$blockSize} - 2px) ;
+    height: calc(#{$blockSize} - 2px);
+    left: calc(#{$blockSize} + 1px);
+    top: calc(calc(12 * #{$blockSize}) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(#{$blockSize} - 2px) ;
+    height: calc(#{$blockSize} - 2px);
+    left: calc(calc(10 * #{$blockSize}) + 1px);
+    top: calc(calc(5 * #{$blockSize}) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * #{$blockSize}) + 12px);
+    top: calc(#{$blockSize} / 2);
+    font-size: calc(calc(#{$blockSize} / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position:relative;
+    width:calc(#{$blockSize} * 12);
+    height:calc(#{$blockSize} * 20);
+    margin: auto;
+  }
+}
+//changes block size depending on device size
+@media only screen 
+and (min-device-width: 288px)
+and (min-device-height:538px)
+{
+  @include blocks(24px);
+}
+@media only screen 
+and (min-device-width: 300px)
+and (min-device-height:558px)
+{
+  @include blocks(25px);
+}
+@media only screen 
+and (min-device-width: 312px)
+and (min-device-height:578px)
+{
+  @include blocks(26px);
+}
+@media only screen 
+and (min-device-width: 324px)
+and (min-device-height:598px)
+{
+  @include blocks(27px);
+}
+@media only screen 
+and (min-device-width: 336px)
+and (min-device-height:618px)
+{
+  @include blocks(28px);
+}
+@media only screen 
+and (min-device-width: 348px)
+and (min-device-height:638px)
+{
+  @include blocks(29px);
+}
+@media only screen 
+and (min-device-width: 360px)
+and (min-device-height:658px)
+{
+  @include blocks(30px);
+}
+@media only screen 
+and (min-device-width: 372px)
+and (min-device-height:678px)
+{
+  @include blocks(31px);
+}
+@media only screen 
+and (min-device-width: 384px)
+and (min-device-height:698px)
+{
+  @include blocks(32px);
+}
+@media only screen 
+and (min-device-width: 396px)
+and (min-device-height:718px)
+{
+  @include blocks(33px);
+}
+@media only screen 
+and (min-device-width: 408px)
+and (min-device-height:738px)
+{
+  @include blocks(34px);
+}
+@media only screen 
+and (min-device-width: 420px)
+and (min-device-height:758px)
+{
+  @include blocks(35px);
+}
+
+#refresh {
+  color: black;
+}
+
+
+.hedge{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:auto;
+}
+#screen{
+  width:100%;
+  height:100%;
+  background-image: url("/src/pages/testing/DirtBackground.jpg");
+}

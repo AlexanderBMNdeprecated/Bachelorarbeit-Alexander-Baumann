@@ -1,0 +1,29 @@
+.emptyProgressBar {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 30px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.progressBar {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px -5px #f2709c, 0px 2px 5px #ff9472;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 0px;
+  margin: 0px;
+}
+.progressDiv {
+  text-align: center;
+}
+.progressTitle {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 900;
+}
+

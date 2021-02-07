@@ -1,0 +1,7 @@
+{
+  "name": "Bachelorarbeit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

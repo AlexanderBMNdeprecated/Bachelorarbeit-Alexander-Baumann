@@ -1,0 +1,81 @@
+@mixin frame($borderColor, $backgroundColor ){
+    display: none;
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid $borderColor ;
+    background-color: $backgroundColor ;
+    text-align: left;
+}
+#task{
+    @include frame(#00ff00, #c6ffc6);
+    display:block;
+}
+
+#help{
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid #ffc409 ;
+    background-color: rgba(224, 172, 8, 0.4);
+    display: none;
+}
+.taskCompletedDiv{
+    margin: 10px;
+}
+#taskCompleted{
+    @include frame( #00ff00,  #c6ffc6)
+}
+
+#helpDiv{
+    margin: 10px;
+}
+#setProblemDiv{
+    margin: 10px;
+}
+#solveProblemDiv{
+    margin: 10px;
+}
+#taskDiv{
+    margin: 10px;
+}
+
+
+#defineProblem{
+    @include frame(#3dc2ff, #C1E5F5);
+    
+
+}
+#solveProblem{
+    @include frame(#ff3de5, #f8c6f1);
+ 
+}
+
+.wrapText{
+    white-space: normal;
+    font-size: 16px;
+}
+#answerStyle1{
+    position: relative;
+    left: 30px;
+    top: 4px;
+    font-weight: bold;
+    display: none;
+}
+#answerStyle2{
+    position: relative;
+    left: 30px;
+    top: 4px;
+    font-weight: bold;
+    display: none;
+}
+ion-checkbox{
+    &[disabled]{
+        opacity: 1;
+    }
+}
+ion-label{
+        opacity: 1 !important;
+    
+}
+.removePadding{
+    padding: 0px;
+}

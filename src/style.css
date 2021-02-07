@@ -1,0 +1,976 @@
+.emptyProgressBar {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 30px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  background: -webkit-gradient(linear, right top, left top, from(#f2709c), to(#ff9472));
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  -webkit-box-shadow: 0 3px -5px #f2709c, 0px 2px 5px #ff9472;
+          box-shadow: 0 3px -5px #f2709c, 0px 2px 5px #ff9472;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 0px;
+  margin: 0px;
+}
+
+.progressDiv {
+  text-align: center;
+}
+
+.progressTitle {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 900;
+}
+
+ion-col {
+  text-align: center;
+}
+
+.easyGridStyle {
+  border-style: solid;
+  border-color: #00ff00;
+  background-color: rgba(0, 255, 0, 0.2);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mediumGridStyle {
+  border-style: solid;
+  border-color: #ff8800;
+  background-color: rgba(255, 136, 0, 0.2);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.hardGridStyle {
+  border-style: solid;
+  border-color: #ff0000;
+  background-color: rgba(255, 0, 0, 0.2);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#easyHeader {
+  margin: 10px;
+  color: #4a7500;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#mediumHeader {
+  margin: 10px;
+  color: #bd6b00;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#hardHeader {
+  margin: 10px;
+  color: #4b0000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#menuContent > ion-list {
+  margin: 0px;
+}
+
+#menuContent > ion-list ion-icon {
+  color: #808080;
+  margin-right: 20px;
+}
+
+#menuContent > ion-list ion-item {
+  color: #808080;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-family: lato;
+}
+
+#menuContent > ion-list .active {
+  border-left: 5px solid;
+  border-color: #628cff;
+  color: #628cff;
+  padding-left: 5px;
+}
+
+#menuContent > ion-list .active ion-icon {
+  color: #628cff;
+}
+
+@media only screen and (min-device-width: 288px) and (min-device-height: 538px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(24px - 2px);
+    height: calc(24px - 2px);
+    left: calc(24px + 1px);
+    top: calc(24px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(24px - 2px);
+    height: calc(24px - 2px);
+    left: calc(24px + 1px);
+    top: calc(calc(12 * 24px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(24px - 2px);
+    height: calc(24px - 2px);
+    left: calc(calc(10 * 24px) + 1px);
+    top: calc(calc(5 * 24px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 24px) + 12px);
+    top: calc(24px / 2);
+    font-size: calc(calc(24px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(24px * 12);
+    height: calc(24px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (min-device-height: 558px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(25px - 2px);
+    height: calc(25px - 2px);
+    left: calc(25px + 1px);
+    top: calc(25px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(25px - 2px);
+    height: calc(25px - 2px);
+    left: calc(25px + 1px);
+    top: calc(calc(12 * 25px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(25px - 2px);
+    height: calc(25px - 2px);
+    left: calc(calc(10 * 25px) + 1px);
+    top: calc(calc(5 * 25px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 25px) + 12px);
+    top: calc(25px / 2);
+    font-size: calc(calc(25px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(25px * 12);
+    height: calc(25px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 312px) and (min-device-height: 578px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(26px - 2px);
+    height: calc(26px - 2px);
+    left: calc(26px + 1px);
+    top: calc(26px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(26px - 2px);
+    height: calc(26px - 2px);
+    left: calc(26px + 1px);
+    top: calc(calc(12 * 26px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(26px - 2px);
+    height: calc(26px - 2px);
+    left: calc(calc(10 * 26px) + 1px);
+    top: calc(calc(5 * 26px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 26px) + 12px);
+    top: calc(26px / 2);
+    font-size: calc(calc(26px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(26px * 12);
+    height: calc(26px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 324px) and (min-device-height: 598px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(27px - 2px);
+    height: calc(27px - 2px);
+    left: calc(27px + 1px);
+    top: calc(27px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(27px - 2px);
+    height: calc(27px - 2px);
+    left: calc(27px + 1px);
+    top: calc(calc(12 * 27px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(27px - 2px);
+    height: calc(27px - 2px);
+    left: calc(calc(10 * 27px) + 1px);
+    top: calc(calc(5 * 27px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 27px) + 12px);
+    top: calc(27px / 2);
+    font-size: calc(calc(27px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(27px * 12);
+    height: calc(27px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 336px) and (min-device-height: 618px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(28px - 2px);
+    height: calc(28px - 2px);
+    left: calc(28px + 1px);
+    top: calc(28px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(28px - 2px);
+    height: calc(28px - 2px);
+    left: calc(28px + 1px);
+    top: calc(calc(12 * 28px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(28px - 2px);
+    height: calc(28px - 2px);
+    left: calc(calc(10 * 28px) + 1px);
+    top: calc(calc(5 * 28px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 28px) + 12px);
+    top: calc(28px / 2);
+    font-size: calc(calc(28px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(28px * 12);
+    height: calc(28px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 348px) and (min-device-height: 638px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(29px - 2px);
+    height: calc(29px - 2px);
+    left: calc(29px + 1px);
+    top: calc(29px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(29px - 2px);
+    height: calc(29px - 2px);
+    left: calc(29px + 1px);
+    top: calc(calc(12 * 29px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(29px - 2px);
+    height: calc(29px - 2px);
+    left: calc(calc(10 * 29px) + 1px);
+    top: calc(calc(5 * 29px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 29px) + 12px);
+    top: calc(29px / 2);
+    font-size: calc(calc(29px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(29px * 12);
+    height: calc(29px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (min-device-height: 658px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(30px - 2px);
+    height: calc(30px - 2px);
+    left: calc(30px + 1px);
+    top: calc(30px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(30px - 2px);
+    height: calc(30px - 2px);
+    left: calc(30px + 1px);
+    top: calc(calc(12 * 30px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(30px - 2px);
+    height: calc(30px - 2px);
+    left: calc(calc(10 * 30px) + 1px);
+    top: calc(calc(5 * 30px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 30px) + 12px);
+    top: calc(30px / 2);
+    font-size: calc(calc(30px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(30px * 12);
+    height: calc(30px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 372px) and (min-device-height: 678px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(31px - 2px);
+    height: calc(31px - 2px);
+    left: calc(31px + 1px);
+    top: calc(31px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(31px - 2px);
+    height: calc(31px - 2px);
+    left: calc(31px + 1px);
+    top: calc(calc(12 * 31px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(31px - 2px);
+    height: calc(31px - 2px);
+    left: calc(calc(10 * 31px) + 1px);
+    top: calc(calc(5 * 31px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 31px) + 12px);
+    top: calc(31px / 2);
+    font-size: calc(calc(31px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(31px * 12);
+    height: calc(31px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 384px) and (min-device-height: 698px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(32px - 2px);
+    height: calc(32px - 2px);
+    left: calc(32px + 1px);
+    top: calc(32px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(32px - 2px);
+    height: calc(32px - 2px);
+    left: calc(32px + 1px);
+    top: calc(calc(12 * 32px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(32px - 2px);
+    height: calc(32px - 2px);
+    left: calc(calc(10 * 32px) + 1px);
+    top: calc(calc(5 * 32px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 32px) + 12px);
+    top: calc(32px / 2);
+    font-size: calc(calc(32px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(32px * 12);
+    height: calc(32px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 396px) and (min-device-height: 718px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(33px - 2px);
+    height: calc(33px - 2px);
+    left: calc(33px + 1px);
+    top: calc(33px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(33px - 2px);
+    height: calc(33px - 2px);
+    left: calc(33px + 1px);
+    top: calc(calc(12 * 33px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(33px - 2px);
+    height: calc(33px - 2px);
+    left: calc(calc(10 * 33px) + 1px);
+    top: calc(calc(5 * 33px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 33px) + 12px);
+    top: calc(33px / 2);
+    font-size: calc(calc(33px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(33px * 12);
+    height: calc(33px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 408px) and (min-device-height: 738px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(34px - 2px);
+    height: calc(34px - 2px);
+    left: calc(34px + 1px);
+    top: calc(34px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(34px - 2px);
+    height: calc(34px - 2px);
+    left: calc(34px + 1px);
+    top: calc(calc(12 * 34px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(34px - 2px);
+    height: calc(34px - 2px);
+    left: calc(calc(10 * 34px) + 1px);
+    top: calc(calc(5 * 34px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 34px) + 12px);
+    top: calc(34px / 2);
+    font-size: calc(calc(34px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(34px * 12);
+    height: calc(34px * 20);
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 420px) and (min-device-height: 758px) {
+  .wall {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .egg {
+    background-image: url("/src/pages/testing/Egg.png");
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .ground {
+    background-image: url("/src/pages/testing/Dirt.jpg");
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-size: 100%, 100%;
+  }
+  .rabbit {
+    position: absolute;
+    width: calc(35px - 2px);
+    height: calc(35px - 2px);
+    left: calc(35px + 1px);
+    top: calc(35px + 1px);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .wolf1 {
+    position: absolute;
+    width: calc(35px - 2px);
+    height: calc(35px - 2px);
+    left: calc(35px + 1px);
+    top: calc(calc(12 * 35px) + 1px);
+  }
+  .wolf2 {
+    position: absolute;
+    width: calc(35px - 2px);
+    height: calc(35px - 2px);
+    left: calc(calc(10 * 35px) + 1px);
+    top: calc(calc(5 * 35px) + 1px);
+  }
+  #points {
+    position: absolute;
+    font-weight: 900;
+    left: calc(calc(9 * 35px) + 12px);
+    top: calc(35px / 2);
+    font-size: calc(calc(35px / 2) + 3px);
+  }
+  #field {
+    font-size: 0;
+    position: relative;
+    width: calc(35px * 12);
+    height: calc(35px * 20);
+    margin: auto;
+  }
+}
+
+#refresh {
+  color: black;
+}
+
+.hedge {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+}
+
+#screen {
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/pages/testing/DirtBackground.jpg");
+}
+
+#task {
+  display: none;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid #00ff00;
+  background-color: #c6ffc6;
+  text-align: left;
+  display: block;
+}
+
+#help {
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid #ffc409;
+  background-color: rgba(224, 172, 8, 0.4);
+  display: none;
+}
+
+.taskCompletedDiv {
+  margin: 10px;
+}
+
+#taskCompleted {
+  display: none;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid #00ff00;
+  background-color: #c6ffc6;
+  text-align: left;
+}
+
+#helpDiv {
+  margin: 10px;
+}
+
+#setProblemDiv {
+  margin: 10px;
+}
+
+#solveProblemDiv {
+  margin: 10px;
+}
+
+#taskDiv {
+  margin: 10px;
+}
+
+#defineProblem {
+  display: none;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid #3dc2ff;
+  background-color: #C1E5F5;
+  text-align: left;
+}
+
+#solveProblem {
+  display: none;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid #ff3de5;
+  background-color: #f8c6f1;
+  text-align: left;
+}
+
+.wrapText {
+  white-space: normal;
+  font-size: 16px;
+}
+
+#answerStyle1 {
+  position: relative;
+  left: 30px;
+  top: 4px;
+  font-weight: bold;
+  display: none;
+}
+
+#answerStyle2 {
+  position: relative;
+  left: 30px;
+  top: 4px;
+  font-weight: bold;
+  display: none;
+}
+
+ion-checkbox[disabled] {
+  opacity: 1;
+}
+
+ion-label {
+  opacity: 1 !important;
+}
+
+.removePadding {
+  padding: 0px;
+}
+
+p {
+  text-align: left;
+  margin-top: 7px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px;
+}
+/*# sourceMappingURL=style.css.map */
